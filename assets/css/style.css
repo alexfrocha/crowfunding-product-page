@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;700&display=swap');
+
+:root {
+    --moderate-cyan-color: hsl(176, 50%, 47%);
+    --dark-cyan-color: hsl(176, 72%, 28%);
+    --black-color: hsl(0, 0%, 0%);
+    --dark-gray-color: hsl(0, 0%, 48%);
+    --common-ff: "Commissioner", sans-serif;
+}
