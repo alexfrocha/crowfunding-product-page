@@ -9,11 +9,12 @@
   <title>Crowfunding Product Page</title>
 
 </head>
-<body>
-
-  <header class="header">
+<body class="">
+  <header class="header" id="header">
     <nav class="nav">
       <img src="images/logo.svg" alt="" class="logo">
+      <div class=""></div>
+      <div class=""></div>
       <ul class="menu-list">
         <li class="menu-item"><a href="" class="menu-link">Sobre</a></li>
         <li class="menu-item"><a href="" class="menu-link">Descobrir</a></li>
@@ -28,10 +29,9 @@
       <h2 class="card-title">Mastercraft Bamboo Monitor Riser</h2>
       <p class="card-text">Um suporte de monitor bonito e artesanal para reduzir o cansaço do pescoço e dos olhos.      </p>
       <div class="card-buttons">
-        <button class="card-button">Doar</button>
         <div class="card-icon-button">
           <img src="images/icon-bookmark.svg" alt="" class="card-button-icon">
-          <button class="card-button">Anotações</button>
+          <button class="card-button">Salvo</button>
         </div>
       </div>
     </div>
@@ -72,7 +72,7 @@
               <p class="card-product-amount-value">101</p>
               <span class="card-product-amount-text">restantes</span>
             </div>
-            <button class="card-product-footer-button">Selecionar</button>
+            <button class="card-product-footer-button">Doar</button>
           </div>
         </div>
         
@@ -87,11 +87,11 @@
               <p class="card-product-amount-value">64</p>
               <span class="card-product-amount-text">restantes</span>
             </div>
-            <button class="card-product-footer-button">Selecionar</button>
+            <button class="card-product-footer-button">Doar</button>
           </div>
         </div>
         
-        <div class="card-product">
+        <div class="card-product disable">
           <div class="card-product-header">
             <p class="card-product-name">Edição Especial de Mogno</p>
             <p class="card-product-price">Doe R$200 ou mais</p>
@@ -102,7 +102,7 @@
               <p class="card-product-amount-value">0</p>
               <span class="card-product-amount-text">restantes</span>
             </div>
-            <button class="card-product-footer-button">Fora de Estoque</button>
+            <button class="card-product-footer-button disable">Fora de Estoque</button>
           </div>
         </div>
 
@@ -120,136 +120,7 @@
       <button class="modal-button">Certo!</button>
     </div>
 
-    <div class="modal none">
-      <div class="modal-content">
-        <div class="modal-content-info">
-          <h2 class="modal-title">Torne-se um patrocinador</h2>
-          <p class="modal-text">Quer nos apoiar em trazer o Mastercraft Bamboo Monitor Riser para o mundo?</p>
-        </div>
-        <img src="images/icon-close-modal.svg" alt="" class="modal-close">
-      </div>
-      <div class="modal-options">
-
-        <div class="modal-option">
-          <div class="modal-option-content-container">
-            <input type="radio" class="modal-option-radio">
-            <div class="modal-option-content">
-              <div class="modal-option-content-header">
-                <div class="modal-option-content-header-left">
-                  <p class="modal-option-content-name">Doe sem nenhuma recompensa</p>
-                  <p class="modal-option-content-price"></p>
-                </div>
-                <div class="modal-option-content-header-right">
-                  <p class="modal-option-content-value"></p>
-                  <span class="modal-option-content-left"></span>
-                </div>
-              </div>
-              <p class="modal-option-content-text">Escolha nos apoiar sem recompensa se você simplesmente acredita em nosso projeto. Como apoiador, você será inscrito para receber atualizações de produtos por e-mail.</p>
-            </div>
-          </div>
-          <div class="modal-option-footer none">
-            <span class="modal-option-footer-text">Insira sua quantia</span>
-            <div class="modal-option-footer-right">
-              <div class="modal-option-footer-input">
-                <span class="modal-option-footer-input-icon">$</span>
-                <input type="text" min="0" value="0" name="" id="" class="modal-option-footer-form-control">
-              </div>
-              <button class="modal-option-footer-button">Continuar</button>
-            </div>
-          </div>
-        </div>
-
-        <div class="modal-option">
-          <div class="modal-option-content-container">
-            <input type="radio" class="modal-option-radio">
-            <div class="modal-option-content">
-              <div class="modal-option-content-header">
-                <div class="modal-option-content-header-left">
-                  <p class="modal-option-content-name">Estande de Bambu</p>
-                  <p class="modal-option-content-price">Doe R$25 ou mais</p>
-                </div>
-                <div class="modal-option-content-header-right">
-                  <p class="modal-option-content-value">101</p>
-                  <span class="modal-option-content-left">restantes</span>
-                </div>
-              </div>
-              <p class="modal-option-content-text">Você obtém um suporte ergonômico feito de bambu natural. Você nos ajudou a lançar nossa campanha promocional e será adicionado a uma lista especial de membros do Apoiador.</p>
-            </div>
-          </div>
-          <div class="modal-option-footer none">
-            <span class="modal-option-footer-text">Insira sua quantia</span>
-            <div class="modal-option-footer-right">
-              <div class="modal-option-footer-input">
-                <span class="modal-option-footer-input-icon">$</span>
-                <input type="text" min="25" value="25" name="" id="" class="modal-option-footer-form-control">
-              </div>
-              <button class="modal-option-footer-button">Continuar</button>
-            </div>
-          </div>
-        </div>
-
-        <div class="modal-option">
-          <div class="modal-option-content-container">
-            <input type="radio" class="modal-option-radio">
-            <div class="modal-option-content">
-              <div class="modal-option-content-header">
-                <div class="modal-option-content-header-left">
-                  <p class="modal-option-content-name">Suporte Edição Preta</p>
-                  <p class="modal-option-content-price">Doe R$75 ou mais</p>
-                </div>
-                <div class="modal-option-content-header-right">
-                  <p class="modal-option-content-value">64</p>
-                  <span class="modal-option-content-left">restantes</span>
-                </div>
-              </div>
-              <p class="modal-option-content-text">Você recebe um suporte de computador Black Special Edition e um agradecimento pessoal. Você será adicionado à nossa lista de membros Apoiadores. O envio está incluído.</p>
-            </div>
-          </div>
-          <div class="modal-option-footer none">
-            <span class="modal-option-footer-text">Insira sua quantia</span>
-            <div class="modal-option-footer-right">
-              <div class="modal-option-footer-input">
-                <span class="modal-option-footer-input-icon">$</span>
-                <input type="text" min="75" value="75" name="" id="" class="modal-option-footer-form-control">
-              </div>
-              <button class="modal-option-footer-button">Continuar</button>
-            </div>
-          </div>
-        </div>
-
-        <div class="modal-option modal-option-disabled">
-          <div class="modal-option-content-container">
-            <input type="radio" class="modal-option-radio">
-            <div class="modal-option-content">
-              <div class="modal-option-content-header">
-                <div class="modal-option-content-header-left">
-                  <p class="modal-option-content-name">Edição Especial de Mogno</p>
-                  <p class="modal-option-content-price">Doe R$200 ou mais</p>
-                </div>
-                <div class="modal-option-content-header-right">
-                  <p class="modal-option-content-value"></p>
-                  <span class="modal-option-content-left"></span>
-                </div>
-              </div>
-              <p class="modal-option-content-text">Você ganha dois suportes de mogno de edição especial, uma camiseta de apoio e um agradecimento pessoal. Você será adicionado à nossa lista de membros Apoiadores. O envio está incluído.</p>
-            </div>
-          </div>
-          <div class="modal-option-footer none">
-            <span class="modal-option-footer-text">Insira sua quantia</span>
-            <div class="modal-option-footer-right">
-              <div class="modal-option-footer-input">
-                <span class="modal-option-footer-input-icon">$</span>
-                <input type="text" value="0" name="" id="" class="modal-option-footer-form-control">
-              </div>
-              <button class="modal-option-footer-button">Continuar</button>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-
   </div>
-
+  <script src="assets/js/app.js"></script>
 </body>
 </html>

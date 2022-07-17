@@ -7,3 +7,375 @@
     --dark-gray-color: hsl(0, 0%, 48%);
     --common-ff: "Commissioner", sans-serif;
 }
+
+* {
+    font-family: var(--common-ff);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+.header {
+    height: 50vh;
+    width: 100%;
+    background: url('../../images/image-hero-desktop.jpg');
+    background-size: cover;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 3rem 0;
+}
+
+.menu-list {
+    display: flex;
+}
+
+.menu-item {
+    margin-right: 2rem;
+}
+
+.menu-item:last-child {
+    margin-right: 0;
+}
+
+.menu-link {
+    color: white;
+    transition: .3s;
+    
+}
+
+.menu-link:hover {
+    text-decoration: underline;
+}
+
+body {
+    background-color: rgba(0, 0, 0, .05);
+}
+
+.content-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 40%;
+}
+
+.none {
+    display: none;
+}
+
+.card {
+    background-color: white;
+    margin-bottom: 1.5rem;
+    width: 50%;
+    padding: 3rem;
+    border-radius: 7px;
+}
+
+.card:last-child {
+    margin-bottom: 0;
+}
+
+.card:nth-child(1) {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.card:nth-child(1) .card-text {
+    font-size: 16px;
+    margin-top: .5rem;
+    color: var(--dark-gray-color);
+}
+
+.card:nth-child(1) .card-buttons {
+    display: flex;
+    margin-top: 1.5rem;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.card-button:first-child {
+    padding: 0 2rem;
+    border-radius: 65px;
+    border: 0;
+    background-color: var(--moderate-cyan-color);
+    color: white;
+    font-weight: 500;
+    transition: .3s;
+}
+
+.card-button:first-child:hover {
+    cursor: pointer;
+    background-color: var(--dark-cyan-color);
+}
+
+.card-icon-button {
+    display: flex;
+    position: relative;
+}
+
+.card-icon-button .card-button-icon {
+    position: absolute;
+}
+
+.card-icon-button .card-button {
+    padding: 1.12rem 2rem 1.35rem 5rem;
+    border-radius: 65px;
+    border: 0;
+    font-weight: 500;
+    color: var(--dark-gray-color);
+}
+
+.card-icon {
+    position: absolute;
+    top: -12%;
+}
+
+.card-stats {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-stat {
+    border-right: 1px solid var(--dark-gray-color);
+    padding-right: 2rem;
+}
+
+.card-stat:last-child {
+    border-right: 0;
+}
+
+.card-stat-text {
+    font-size: 16px;
+    color: var(--dark-gray-color);
+}
+
+.progress-bar-content {
+    margin-top: 1rem;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .1);
+    border-radius: 60px;
+    height: 15px;
+}
+
+.progress-bar {
+    height: 100%;
+    background-color: var(--moderate-cyan-color);
+    width: 89%;
+    border-radius: 60px;
+}
+
+.card:nth-child(3) .card-text {
+    margin-top: 2rem;
+    color: var(--dark-gray-color);
+}
+
+.card:nth-child(3) .card-products {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-product {
+    margin-bottom: 1.5rem;
+    padding: 2rem;
+    border: 1px solid var(--dark-gray-color);
+    border-radius: 5px;
+}
+
+.card-product:last-child {
+    margin-bottom: 0;
+}
+
+.card-product-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-product-name {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.card-product-price {
+    font-weight: 500;
+    color: var(--moderate-cyan-color);
+}
+
+.card-product-text {
+    margin-top: .6rem;
+    color: var(--dark-gray-color);
+}
+
+.card-product-footer {
+    display: flex;
+    margin-top: 2rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-product-amount {
+    display: flex;
+    align-items: center;
+}
+
+.card-product-amount-value {
+    font-size: 25px;
+    font-weight: 700;
+    margin-right: 5px;
+}
+
+.card-product-amount-text {
+    color: var(--dark-gray-color);
+}
+
+.card-product-footer-button {
+    border: 0;
+    outline: 0;
+    padding: .7rem 0;
+    border-radius: 60px;
+    background-color: var(--moderate-cyan-color);
+    width: 160px;
+    font-weight: 500;
+    color: white;
+    transition: .2s;
+}
+
+.card-product-footer-button:hover {
+    cursor: pointer;
+    background: var(--dark-cyan-color);
+}
+
+.card-product.disable {
+    filter: grayscale(70%);
+    cursor: no-drop;
+    color: rgba(0, 0, 0, .3);
+}
+
+.card-product.disable {
+    border: 1px solid rgba(0, 0, 0, .3);
+}
+
+.card-product.disable .card-product-text {
+    color: inherit;
+}
+
+.card-product.disable .card-product-footer-button {
+    background: rgba(0, 0, 0, .3);
+}
+
+.card-product.disable .card-product-footer-button:hover {
+    background: rgba(0, 0, 0, .3);
+    cursor: inherit;
+}
+body.modal {
+    overflow: hidden;
+}
+
+.opacity-pattern {
+    background-color: rgba(0, 0, 0, .5);
+    height: 100%;
+    width: 100%;
+    z-index: 999;
+    position: fixed;
+    top: 0;
+}
+
+body {
+    position: relative;
+    height: 100vh;
+}
+
+.modal:nth-child(1) {
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    width: 30%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.modal:nth-child(1) .modal-title {
+    margin-top: 1.4rem;
+    margin-bottom: .4rem;
+}
+
+.modal:nth-child(1) .modal-text {
+    margin-bottom: 1.2rem;
+}
+
+.modal:nth-child(1) .modal-button {
+    padding: .5rem 2rem;
+    border-radius: 60px;
+    color: white;
+    background: var(--moderate-cyan-color);
+    border: 0;
+    transition: .3s;
+    font-weight: 500;
+}
+
+.modal:nth-child(1) .modal-button:hover {
+    background-color: var(--dark-cyan-color);
+    cursor: pointer;
+}
+
+.modal:nth-child(1).none, .modal:nth-child(2).none{
+    display: none;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .card {
+        width: 70%;
+    }
+    .card-product {
+        margin-bottom: 3rem;
+    }
+    .card-stat {
+        padding-right: 0;
+        border-right: 0;
+        text-align: center;
+        margin-bottom: 1.5rem;
+    }
+
+    .card-stat:last-child {
+        margin-bottom: 0;
+    }
+    .card-product-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .card-product-footer {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: .3rem;
+    }
+
+    .card-product-footer-button {
+        margin-top: 1rem;
+    }
+
+    .card-stats {
+        flex-direction: column;
+    }
+}
